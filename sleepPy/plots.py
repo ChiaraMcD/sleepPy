@@ -265,7 +265,7 @@ def _plot_hypnogram_from_list(data_list,
             data_to_plot = curr_df.resample(base_freq).mean()
             # for quality control, allow option to plot by epoch number
             if plot_epochs:
-                data_to_plot = data_to_plot.reset_index(drop=true)
+                data_to_plot = data_to_plot.reset_index(drop=True)
             # grab the value of the stage for labelling
             label = curr_df.iloc[0,label_col]
             curr_axis.plot(data_to_plot,
